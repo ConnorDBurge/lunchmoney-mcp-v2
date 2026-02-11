@@ -1,0 +1,47 @@
+{
+  "name": "lunchmoney-mcp-v2",
+  "version": "1.0.0",
+  "description": "MCP server for Lunch Money, powered by the v2 TypeScript client",
+  "type": "module",
+  "main": "build/index.js",
+  "bin": {
+    "lunchmoney-mcp-v2": "./build/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "LUNCHMONEY_API_TOKEN='YOUR_TOKEN_HERE' npx @modelcontextprotocol/inspector node build/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "files": [
+    "build"
+  ],
+  "keywords": [
+    "mcp",
+    "lunchmoney",
+    "lunch-money",
+    "finance",
+    "model-context-protocol",
+    "ai"
+  ],
+  "author": "ConnorDBurge",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConnorDBurge/lunchmoney-mcp-v2.git"
+  },
+  "homepage": "https://github.com/ConnorDBurge/lunchmoney-mcp-v2#readme",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@lunch-money/lunch-money-js-v2": "^2.8.5",
+    "@modelcontextprotocol/sdk": "^1.17.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.1.0"
+  }
+}
